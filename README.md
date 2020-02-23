@@ -21,3 +21,87 @@
     @app.teardown_appcontext # application context가 destroy 시에
     def ...(exception)
     ~~~
+6. Routing
+    ~~~python
+
+    @app.route('/test')
+    def ...
+
+    @app.route('/test', methods=['POST', 'PUT' ])
+
+    # 파라미터
+    @app.route('/test/<tid>')
+    def test3(tid):
+        print("tid is", tid)
+
+    # page ... 없으면 index
+    @app.route('/test/, defaults={'page': 'index'})
+    @app.route('/test/<page>')
+    def ...
+
+    @app.route('/test', host='abc.com')
+    @app.route('/test', redirect_to='/new_test')
+    ~~~
+7. sub-domain
+    blog.naver.com 에서 blog는 서브 도메인이다.   
+    서브 도메인 별 다른 처리가 가능하자나
+    ~~~python
+    @app.route("/", subdomain="blog")
+    def naverblog():
+        return "Hello blog.naver.com!!!"
+    ~~~
+
+8. Request Parameter
+    ...get('<param name>', <default-value>, <type>)
+    methods: get, getlist(리스트), clear, etc
+
+    ~~~python
+    # GET ,,, args
+    request.args.get('q')
+
+    # POST ,,, form
+    request.form.get('p', 123)
+
+    # GET or POST ,,, values
+    # values를 사용하면 GET이든 POST든 파라미터는 다 받는다.
+    request.values.get('v')
+
+    # Parameters
+    request.args.getlist('qs')
+    ~~~
+7. request.environ
+8. xhr
+9. response
+    리스폰스 구조
+    - headers
+    - status
+    - status_code
+    - data
+    - mimetype
+    ~~~python
+    res = Response("Test")
+    res.headers.add("Program-Name", "Test Response")
+    res.set_data("This is Test Program.")
+    res.set_cookie("UserToken", "A12Bc9")
+    ~~~
+10. Cookie, IndexedDB, Storage
+
+    Cookie Argument
+    - key
+    - value
+    - max_age
+    - expires
+    - domain
+    - path
+
+    ~~~python
+    res = Response("Test")
+    res.set_cookie("UserToken", "A12Bc9")
+
+    # other request
+    request.cookies.get("UserToken", "A12Bc9")
+    ~~~
+
+11. Session
+    서버 메모리에 떠있는 singletone 객체, 서버에다 심어놓는 쿠키와 같음
+    시크릿 키를 동반해야한다. 

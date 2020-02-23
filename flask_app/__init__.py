@@ -1,10 +1,19 @@
 from flask import Flask
 from flask import g
 from flask import Response, make_response 
+from flask import request
+
+from datetime import datetime, date
+
 
 app = Flask(__name__)
 app.debug = True # 디버그 할때 써래 
 
+app.config.update(
+    SECRET_KEY='X1243yRH!mMwf',
+    SESSION_COOKIE_NAME='pyweb_flask_session',
+    PERMANENT_SESSION_LIFETIME=timedelta(31) # 31 days
+)
 # request 요청을 실행하기 전에 한번 해줘
 @app.before_request
 def before_request(): 
@@ -35,6 +44,49 @@ def wsgi_test():
         start_response('200 OK', headers)
         return [body]
     return make_response(application)
+
+@app.route('/req_param')
+def rp():
+    p = request.args.get('p')
+    return "p= %s" % str(p)
+
+def ymd(fmt):
+    def trans(date_str):
+        return datetime.strptime(date_str, fmt)
+    return trans
+
+@app.route('/dt')
+def dt():
+    datestr = request.values.get('date', date.today(), type=ymd('%Y-%m-%d'))
+    return "우리나라 시간 형식 : " + str(datestr)
+
+@app.route('/req_env')
+def req_env():
+    return ('REQUEST_METHOD: %(REQUEST_METHOD) s <br>'
+            'SERVER_NAME: %(SERVER_NAME) s <br>') % request.environ
+
+@app.route('/w_cookie')
+def w_cookie():
+    key = request.args.get('key')
+    val = request.args.get('val')
+    res = Response("SET COOKIE")
+    res.set_cookie(key, val)
+    session['Token'] = '123X'
+
+    return make_response(res)
+
+@app.route('/r_cookie')
+def r_cookie():
+    key = request.args.get('key')
+    val = request.cookies.get(key)
+    return "cookie['" + key + "] = " + val + " , " + session.get('Token')
+
+@app.route('/d_session')
+def d_session():
+    if( session.get('Token'): ):
+        del session['Token']
+    return "Session이 삭제되었습니다."
+
 
 @app.route("/")
 def start():
