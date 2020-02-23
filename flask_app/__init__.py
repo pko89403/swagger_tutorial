@@ -3,11 +3,26 @@ from flask import g
 from flask import Response, make_response 
 from flask import request
 
-from datetime import datetime, date
+from datetime import datetime, date, timedelta
 
+from flask_restplus import Api, Resource, fields
 
 app = Flask(__name__)
+
+api = Api(app) # flask restplus 의 시작 
+
+api_model = api.model('Language', {'language' : fields.String('The language.')})
 app.debug = True # 디버그 할때 써래 
+
+
+@api.route('/language')
+class Language(Resource):
+    def get(self):
+        return languages
+    @api.expect(api_model)
+    def post(self):
+        langauges.append(api.payload)
+        return {'result' : "Language added"}, 201
 
 app.config.update(
     SECRET_KEY='X1243yRH!mMwf',
@@ -83,7 +98,7 @@ def r_cookie():
 
 @app.route('/d_session')
 def d_session():
-    if( session.get('Token'): ):
+    if( session.get('Token') ):
         del session['Token']
     return "Session이 삭제되었습니다."
 
