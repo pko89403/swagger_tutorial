@@ -1,0 +1,5 @@
+2020/06/15 03:58:28 [warn] 19#19: *1 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/1/00/0000000001 while reading upstream, client: 172.29.0.1, server: 127.0.0.1, request: "GET /admin/ HTTP/1.1", upstream: "http://172.29.0.2:8000/admin/", host: "localhost"
+2020/07/01 04:22:15 [emerg] 1#1: "worker_processes" directive is not allowed here in /etc/nginx/conf.d/nginx.conf:1
+2020/07/01 05:44:01 [emerg] 1#1: "worker_processes" directive is not allowed here in /etc/nginx/conf.d/nginx.conf:1
+2020/07/01 05:49:49 [emerg] 1#1: "worker_processes" directive is not allowed here in /etc/nginx/conf.d/nginx.conf:1
+2020/07/01 06:14:16 [emerg] 1#1: "worker_processes" directive is not allowed here in /etc/nginx/conf.d/nginx.conf:1

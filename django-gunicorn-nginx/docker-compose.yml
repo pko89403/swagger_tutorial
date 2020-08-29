@@ -1,0 +1,23 @@
+version: '3'
+services:
+    nginx:
+        image: nginx:latest 
+        ports: 
+            - "80:80"
+        volumes:
+            - web_api_volume:/django
+            - ./nginx/conf:/etc/nginx/conf.d
+            - ./nginx/log/:/var/log/nginx/
+        depends_on: # api 서비스와 종속된다.
+            - web
+    web:
+        build:
+            context: $PWD/rest_server
+            dockerfile: Dockerfile
+        volumes:
+            - web_api_volume:/django
+        expose:
+            - "8000"
+        command: gunicorn -c /django/gunicorn.py rest_server.wsgi:application
+volumes:
+     web_api_volume: {}
