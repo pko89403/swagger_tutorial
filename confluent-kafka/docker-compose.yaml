@@ -2,7 +2,7 @@ version: "3"
 
 services:
   zookeeper:
-    image: confluentinc/cp-zookeeper:5.5.2
+    image: confluentinc/cp-zookeeper:5.4.0
     hostname: zookeeper
     container_name: zookeeper
     ports:
@@ -12,12 +12,13 @@ services:
       ZOOKEEPER_TICK_TIME: 2000
 
   broker:
-    image: confluentinc/cp-server:5.5.2
+    image: confluentinc/cp-server:5.4.0
     hostname: broker
     container_name: broker
     depends_on:
       - zookeeper
     ports:
+      - "29092:29092"
       - "9092:9092"
     environment:
       KAFKA_BROKER_ID: 1
@@ -35,14 +36,14 @@ services:
       CONFLUENT_SUPPORT_CUSTOMER_ID: "anonymous"
 
   kafka-tools:
-    image: confluentinc/cp-kafka:5.5.2
+    image: confluentinc/cp-kafka:5.4.0
     hostname: kafka-tools
     container_name: kafka-tools
     command: ["tail", "-f", "/dev/null"]
     network_mode: "host"
 
   schema-registry:
-    image: confluentinc/cp-schema-registry:5.5.2
+    image: confluentinc/cp-schema-registry:5.4.0
     hostname: schema-registry
     container_name: schema-registry
     depends_on:
@@ -54,22 +55,34 @@ services:
       SCHEMA_REGISTRY_HOST_NAME: schema-registry
       SCHEMA_REGISTRY_KAFKASTORE_CONNECTION_URL: "zookeeper:2181"
 
-  control-center:
-    image: confluentinc/cp-enterprise-control-center:5.5.2
-    hostname: control-center
-    container_name: control-center
+  schema-registry-ui:
+    image: landoop/schema-registry-ui:latest
+    hostname: schema-registry-ui
+    container_name: schema-registry-ui
     depends_on:
       - zookeeper
       - broker
       - schema-registry
     ports:
-      - "3554:3554"
+      - "8000:8000"
+    environment: 
+      SCHEMAREGISTRY_URL: "http://localhost:8081"
+      PROXY: "false"
+
+
+  kafka-manager:
+    image: hlebalbau/kafka-manager:stable
+    hostname: kafka-manager
+    container_name: kafka-manager
+    depends_on:
+      - zookeeper
+      - broker
+      - schema-registry
+    ports:
+      - "9000:9000"
     environment:
-      CONTROL_CENTER_BOOTSTRAP_SERVERS: 'broker:29092'
-      CONTROL_CENTER_ZOOKEEPER_CONNECT: 'zookeeper:2181'
-      CONTROL_CENTER_SCHEMA_REGISTRY_URL: "schema-registry:8081"
-      CONTROL_CENTER_REPLICATION_FACTOR: 1
-      CONTROL_CENTER_INTERNAL_TOPICS_PARTITIONS: 1
-      CONTROL_CENTER_MONITORING_INTERCEPTOR_TOPIC_PARTITIONS: 1
-      CONFLUENT_METRICS_TOPIC_REPLICATION: 1
-      PORT: 3554
+      ZK_HOSTS: 'zookeeper:2181'
+      APPLICATION_SECRET: 'random-secret'
+    command:  -Dpidfile.path=/dev/null
+
+  

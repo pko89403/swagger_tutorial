@@ -11,9 +11,9 @@ all configuration options can also be centralized in a single
 ## docker-compose.yaml
 분산 시스템은 다양한 동물들이 살고 있는 동물원이다. 
 컴포즈 파일은 세가지 서비스들을 가지는데 zookeeper, broker 그리고 kafka-tools다.    
-- confluentinc/cp-zookeeper:5.5.2 : 야후 연구 개발팀에서 개발된 서비스로 분산 시스템이 안전하게 작동할 수 있는 간편한 API를 제공한다.  
-- confluentinc/cp-server:5.5.2  
-- confluentinc/cp-kafka:5.5.2
+- confluentinc/cp-zookeeper:5.4.0 : 야후 연구 개발팀에서 개발된 서비스로 분산 시스템이 안전하게 작동할 수 있는 간편한 API를 제공한다.  
+- confluentinc/cp-server:5.4.0  
+- confluentinc/cp-kafka:5.4.0
 세 이미지를 사용한다. broker는 Apache Kafka고 Apache Zookeeper에 의존적 이어야 하기 때문에 compose file에서 dependency 를 건다.
 ## Start the Containers
 ~~~sh
@@ -72,7 +72,19 @@ key1	val1
 ## Schema Registry
 There is an implicit 'contract' that producers write data with a schema that can be read by consumers, even as producers and consumers evolve their schema. Schema Registry helps ensure that this contract is met with compatibility checks.     
 It is useful to think about schemas as APIs. It provides centralized schema management and compatibility checks as schemas evolve. using avro.    
-
+~~~sh
+curl localhost:8081 # test
+~~~
 ## Confluent Control Center로 Topic 생성
-'''sh
-http://localhost:9021 '''
+유료라는데...그래서 안되는 거닝...hlebalbau/kafka-manager:stable(It's yahoo's)를 사용함     
+cp-kafa5.4.0 버전의 Kafka 버전은 2.4.0 이다.
+[Reference3]('https://megazonedsg.github.io/kafka-prod-env/')
+
+## Schema Registry UI 
+[Reference4](https://lenses.io/blog/2016/08/schema-registry-ui/)
+- Exploring and searching schemas
+- Avro evaluation compatibility checks
+- New schema registration
+- Avro + Table Schema views
+- Displaying CURL commands 
+- A 15Mbytes Docker image (???)
