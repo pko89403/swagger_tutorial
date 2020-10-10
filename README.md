@@ -10,17 +10,14 @@ All Docker Image Based Serve ( Docker-Compose )
 ### Flask
 ### Django
 ### Nginx-Gunicorn-Django
-
+### Confluent Kafka OSS
 ## Reference
 ### About Django Project 
 https://docs.djangoproject.com/ko/3.0/intro/tutorial01/
-
 ### Serving Image as a Docker
 https://soyoung-new-challenge.tistory.com/74
-
 ### Backend Python WAS 
 http://dveamer.github.io/backend/PythonWAS.html
-
 ### About Nginx 
 /django-gunicorn-nginx/nginx/
 django-gunicorn-nginx/nginx/conf/nginx.conf
