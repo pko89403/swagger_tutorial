@@ -88,3 +88,51 @@ cp-kafa5.4.0 버전의 Kafka 버전은 2.4.0 이다.
 - Avro + Table Schema views
 - Displaying CURL commands 
 - A 15Mbytes Docker image (???)
+
+## Mac OS X Install maven
+~~~sh
+brew install maven # 설치 명령어
+mvn -version # 버전 확인 명령어
+which mvn # 명령어 위치 확인하기
+export M2_HOME=/usr/local/Cellar/maven/3.6.3_1/libexec
+export M2=$M2_HOME/bin
+export PATH=$PATH:$M2_HOME/bin
+~~~
+## Maven 프로젝트 생성하기
+~~~sh
+ mvn archetype:generate -DarchetypeGroupId=org.apache.maven.archetypes -DarchetypeArtifactId=maven-archetype-simple -DarchetypeVersion=1.4 \
+-DgroupId=com.example.chapter4 -DartifactId=firstapp -Dversion=1.0-SNAPSHOT -DinteractiveMode=false
+~~~
+
+pom.xml에 컨플루언트 리포지토리를 추가한다. 
+pom.xml에 kafka dependency도 함께 추가한다.
+~~~xml
+    <plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-assembly-plugin</artifactId>
+    <version>3.1.0</version>
+    <configuration>
+        <descriptorRefs>
+            <!-- 이걸 지정해야 사용하는 lib을 포함하는 fat-jar가 만들어진다. -->
+            <descriptorRef>jar-with-dependencies</descriptorRef>
+        </descriptorRefs>
+    </configuration>
+    <executions>
+        <execution>
+        <phase>package</phase>
+        <goals>
+            <goal>single</goal>
+        </goals>
+        </execution>
+    </executions>
+    </plugin>
+~~~
+fat-jar 빌드 할 수 있어! 쏠 수 있어~!
+~~~sh
+mvn clean
+mvn package -DskipTests # 제대로 빌드 되면 target 디렉토리 아래에 2개의 jar 파일이 생성된다.
+~~~
+실행 할 수 있어! 나 쏠 수 있어~!
+~~~sh
+java -cp ./firstapp-1.0-SNAPSHOT-jar-with-dependencies.jar com.example.chapter4.FirstAppProducer
+~~~
