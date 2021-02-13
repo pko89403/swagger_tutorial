@@ -2,3 +2,5 @@ jenkins/app/jenkins/logs/tasks/Periodic background build discarder.log
 confluent-kafka/firstapp/.project
 jenkins/app/jenkins/.owner
 __pycache__
+es-engine/es-kibana/data/*
+config.txt
