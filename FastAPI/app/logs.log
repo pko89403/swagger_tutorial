@@ -1,0 +1,6 @@
+2021-05-30 15:36:13,621:INFO:Initializing load_model()
+2021-05-30 15:36:13,621:INFO:load_model(model_name=../pycaret/diamond-pipeline, platform=None, authentication=None, verbose=True)
+2021-05-30 15:38:11,197:INFO:Initializing load_model()
+2021-05-30 15:38:11,198:INFO:load_model(model_name=../pycaret/diamond-pipeline, platform=None, authentication=None, verbose=True)
+2021-05-30 15:39:26,717:INFO:Initializing load_model()
+2021-05-30 15:39:26,718:INFO:load_model(model_name=../pycaret/diamond-pipeline, platform=None, authentication=None, verbose=True)

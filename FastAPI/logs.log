@@ -1,0 +1,482 @@
+2021-05-30 17:38:24,731:INFO:Initializing load_model()
+2021-05-30 17:38:24,731:INFO:load_model(model_name=diamond-pipeline, platform=None, authentication=None, verbose=True)
+2021-05-30 17:38:57,131:INFO:Initializing load_model()
+2021-05-30 17:38:57,131:INFO:load_model(model_name=model/diamond-pipeline, platform=None, authentication=None, verbose=True)
+2021-05-30 17:39:31,295:INFO:Initializing load_model()
+2021-05-30 17:39:31,296:INFO:load_model(model_name=model/diamond-pipeline, platform=None, authentication=None, verbose=True)
+2021-05-30 17:40:29,575:INFO:Initializing load_model()
+2021-05-30 17:40:29,575:INFO:load_model(model_name=model/diamond-pipeline, platform=None, authentication=None, verbose=True)
+2021-05-30 17:43:09,200:INFO:Initializing load_model()
+2021-05-30 17:43:09,201:INFO:load_model(model_name=model/diamond-pipeline, platform=None, authentication=None, verbose=True)
+2021-05-30 17:45:17,016:INFO:Initializing load_model()
+2021-05-30 17:45:17,016:INFO:load_model(model_name=model/diamond-pipeline, platform=None, authentication=None, verbose=True)
+2021-05-30 17:45:22,789:INFO:Initializing predict_model()
+2021-05-30 17:45:22,789:INFO:predict_model(estimator=Pipeline(memory=None,
+         steps=[('dtypes',
+                 DataTypes_Auto_infer(categorical_features=[],
+                                      display_types=True, features_todrop=[],
+                                      id_columns=[], ml_usecase='regression',
+                                      numerical_features=[], target='Price',
+                                      time_features=[])),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='...
+                                                                         learning_rate=0.1,
+                                                                         max_depth=-1,
+                                                                         min_child_samples=20,
+                                                                         min_child_weight=0.001,
+                                                                         min_split_gain=0.0,
+                                                                         n_estimators=100,
+                                                                         n_jobs=-1,
+                                                                         num_leaves=31,
+                                                                         objective=None,
+                                                                         random_state=719,
+                                                                         reg_alpha=0.0,
+                                                                         reg_lambda=0.0,
+                                                                         silent=True,
+                                                                         subsample=1.0,
+                                                                         subsample_for_bin=200000,
+                                                                         subsample_freq=0),
+                                                 silent=True, subsample=1.0,
+                                                 subsample_for_bin=200000,
+                                                 subsample_freq=0)]],
+         verbose=False), probability_threshold=None, encoded_labels=True, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None)
+2021-05-30 17:45:22,789:INFO:Checking exceptions
+2021-05-30 17:45:22,789:INFO:Preloading libraries
+2021-05-30 17:45:50,801:INFO:Initializing load_model()
+2021-05-30 17:45:50,801:INFO:load_model(model_name=model/diamond-pipeline, platform=None, authentication=None, verbose=True)
+2021-05-30 17:45:55,132:INFO:Initializing predict_model()
+2021-05-30 17:45:55,132:INFO:predict_model(estimator=Pipeline(memory=None,
+         steps=[('dtypes',
+                 DataTypes_Auto_infer(categorical_features=[],
+                                      display_types=True, features_todrop=[],
+                                      id_columns=[], ml_usecase='regression',
+                                      numerical_features=[], target='Price',
+                                      time_features=[])),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='...
+                                                                         learning_rate=0.1,
+                                                                         max_depth=-1,
+                                                                         min_child_samples=20,
+                                                                         min_child_weight=0.001,
+                                                                         min_split_gain=0.0,
+                                                                         n_estimators=100,
+                                                                         n_jobs=-1,
+                                                                         num_leaves=31,
+                                                                         objective=None,
+                                                                         random_state=719,
+                                                                         reg_alpha=0.0,
+                                                                         reg_lambda=0.0,
+                                                                         silent=True,
+                                                                         subsample=1.0,
+                                                                         subsample_for_bin=200000,
+                                                                         subsample_freq=0),
+                                                 silent=True, subsample=1.0,
+                                                 subsample_for_bin=200000,
+                                                 subsample_freq=0)]],
+         verbose=False), probability_threshold=None, encoded_labels=True, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None)
+2021-05-30 17:45:55,132:INFO:Checking exceptions
+2021-05-30 17:45:55,132:INFO:Preloading libraries
+2021-05-30 17:46:59,678:INFO:Initializing predict_model()
+2021-05-30 17:46:59,678:INFO:predict_model(estimator=Pipeline(memory=None,
+         steps=[('dtypes',
+                 DataTypes_Auto_infer(categorical_features=[],
+                                      display_types=True, features_todrop=[],
+                                      id_columns=[], ml_usecase='regression',
+                                      numerical_features=[], target='Price',
+                                      time_features=[])),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='...
+                                                                         learning_rate=0.1,
+                                                                         max_depth=-1,
+                                                                         min_child_samples=20,
+                                                                         min_child_weight=0.001,
+                                                                         min_split_gain=0.0,
+                                                                         n_estimators=100,
+                                                                         n_jobs=-1,
+                                                                         num_leaves=31,
+                                                                         objective=None,
+                                                                         random_state=719,
+                                                                         reg_alpha=0.0,
+                                                                         reg_lambda=0.0,
+                                                                         silent=True,
+                                                                         subsample=1.0,
+                                                                         subsample_for_bin=200000,
+                                                                         subsample_freq=0),
+                                                 silent=True, subsample=1.0,
+                                                 subsample_for_bin=200000,
+                                                 subsample_freq=0)]],
+         verbose=False), probability_threshold=None, encoded_labels=True, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None)
+2021-05-30 17:46:59,678:INFO:Checking exceptions
+2021-05-30 17:46:59,678:INFO:Preloading libraries
+2021-05-30 17:47:34,009:INFO:Initializing load_model()
+2021-05-30 17:47:34,009:INFO:load_model(model_name=model/diamond-pipeline, platform=None, authentication=None, verbose=True)
+2021-05-30 17:47:47,451:INFO:Initializing load_model()
+2021-05-30 17:47:47,452:INFO:load_model(model_name=model/diamond-pipeline, platform=None, authentication=None, verbose=True)
+2021-05-30 17:47:53,945:INFO:Initializing load_model()
+2021-05-30 17:47:53,945:INFO:load_model(model_name=model/diamond-pipeline, platform=None, authentication=None, verbose=True)
+2021-05-30 17:48:06,352:INFO:Initializing load_model()
+2021-05-30 17:48:06,352:INFO:load_model(model_name=model/diamond-pipeline, platform=None, authentication=None, verbose=True)
+2021-05-30 17:48:25,190:INFO:Initializing load_model()
+2021-05-30 17:48:25,190:INFO:load_model(model_name=model/diamond-pipeline, platform=None, authentication=None, verbose=True)
+2021-05-30 17:48:26,848:INFO:Initializing predict_model()
+2021-05-30 17:48:26,848:INFO:predict_model(estimator=Pipeline(memory=None,
+         steps=[('dtypes',
+                 DataTypes_Auto_infer(categorical_features=[],
+                                      display_types=True, features_todrop=[],
+                                      id_columns=[], ml_usecase='regression',
+                                      numerical_features=[], target='Price',
+                                      time_features=[])),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='...
+                                                                         learning_rate=0.1,
+                                                                         max_depth=-1,
+                                                                         min_child_samples=20,
+                                                                         min_child_weight=0.001,
+                                                                         min_split_gain=0.0,
+                                                                         n_estimators=100,
+                                                                         n_jobs=-1,
+                                                                         num_leaves=31,
+                                                                         objective=None,
+                                                                         random_state=719,
+                                                                         reg_alpha=0.0,
+                                                                         reg_lambda=0.0,
+                                                                         silent=True,
+                                                                         subsample=1.0,
+                                                                         subsample_for_bin=200000,
+                                                                         subsample_freq=0),
+                                                 silent=True, subsample=1.0,
+                                                 subsample_for_bin=200000,
+                                                 subsample_freq=0)]],
+         verbose=False), probability_threshold=None, encoded_labels=True, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None)
+2021-05-30 17:48:26,848:INFO:Checking exceptions
+2021-05-30 17:48:26,848:INFO:Preloading libraries
+2021-05-30 17:49:41,295:INFO:Initializing predict_model()
+2021-05-30 17:49:41,295:INFO:predict_model(estimator=Pipeline(memory=None,
+         steps=[('dtypes',
+                 DataTypes_Auto_infer(categorical_features=[],
+                                      display_types=True, features_todrop=[],
+                                      id_columns=[], ml_usecase='regression',
+                                      numerical_features=[], target='Price',
+                                      time_features=[])),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='...
+                                                                         learning_rate=0.1,
+                                                                         max_depth=-1,
+                                                                         min_child_samples=20,
+                                                                         min_child_weight=0.001,
+                                                                         min_split_gain=0.0,
+                                                                         n_estimators=100,
+                                                                         n_jobs=-1,
+                                                                         num_leaves=31,
+                                                                         objective=None,
+                                                                         random_state=719,
+                                                                         reg_alpha=0.0,
+                                                                         reg_lambda=0.0,
+                                                                         silent=True,
+                                                                         subsample=1.0,
+                                                                         subsample_for_bin=200000,
+                                                                         subsample_freq=0),
+                                                 silent=True, subsample=1.0,
+                                                 subsample_for_bin=200000,
+                                                 subsample_freq=0)]],
+         verbose=False), probability_threshold=None, encoded_labels=True, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None)
+2021-05-30 17:49:41,296:INFO:Checking exceptions
+2021-05-30 17:49:41,296:INFO:Preloading libraries
+2021-05-30 17:49:55,238:INFO:Initializing load_model()
+2021-05-30 17:49:55,238:INFO:load_model(model_name=model/diamond-pipeline, platform=None, authentication=None, verbose=True)
+2021-05-30 17:49:58,029:INFO:Initializing predict_model()
+2021-05-30 17:49:58,029:INFO:predict_model(estimator=Pipeline(memory=None,
+         steps=[('dtypes',
+                 DataTypes_Auto_infer(categorical_features=[],
+                                      display_types=True, features_todrop=[],
+                                      id_columns=[], ml_usecase='regression',
+                                      numerical_features=[], target='Price',
+                                      time_features=[])),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='...
+                                                                         learning_rate=0.1,
+                                                                         max_depth=-1,
+                                                                         min_child_samples=20,
+                                                                         min_child_weight=0.001,
+                                                                         min_split_gain=0.0,
+                                                                         n_estimators=100,
+                                                                         n_jobs=-1,
+                                                                         num_leaves=31,
+                                                                         objective=None,
+                                                                         random_state=719,
+                                                                         reg_alpha=0.0,
+                                                                         reg_lambda=0.0,
+                                                                         silent=True,
+                                                                         subsample=1.0,
+                                                                         subsample_for_bin=200000,
+                                                                         subsample_freq=0),
+                                                 silent=True, subsample=1.0,
+                                                 subsample_for_bin=200000,
+                                                 subsample_freq=0)]],
+         verbose=False), probability_threshold=None, encoded_labels=True, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None)
+2021-05-30 17:49:58,029:INFO:Checking exceptions
+2021-05-30 17:49:58,029:INFO:Preloading libraries
+2021-05-30 17:50:24,169:INFO:Initializing load_model()
+2021-05-30 17:50:24,169:INFO:load_model(model_name=model/diamond-pipeline, platform=None, authentication=None, verbose=True)
+2021-05-30 17:50:29,585:INFO:Initializing predict_model()
+2021-05-30 17:50:29,585:INFO:predict_model(estimator=Pipeline(memory=None,
+         steps=[('dtypes',
+                 DataTypes_Auto_infer(categorical_features=[],
+                                      display_types=True, features_todrop=[],
+                                      id_columns=[], ml_usecase='regression',
+                                      numerical_features=[], target='Price',
+                                      time_features=[])),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='...
+                                                                         learning_rate=0.1,
+                                                                         max_depth=-1,
+                                                                         min_child_samples=20,
+                                                                         min_child_weight=0.001,
+                                                                         min_split_gain=0.0,
+                                                                         n_estimators=100,
+                                                                         n_jobs=-1,
+                                                                         num_leaves=31,
+                                                                         objective=None,
+                                                                         random_state=719,
+                                                                         reg_alpha=0.0,
+                                                                         reg_lambda=0.0,
+                                                                         silent=True,
+                                                                         subsample=1.0,
+                                                                         subsample_for_bin=200000,
+                                                                         subsample_freq=0),
+                                                 silent=True, subsample=1.0,
+                                                 subsample_for_bin=200000,
+                                                 subsample_freq=0)]],
+         verbose=False), probability_threshold=None, encoded_labels=True, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None)
+2021-05-30 17:50:29,585:INFO:Checking exceptions
+2021-05-30 17:50:29,585:INFO:Preloading libraries
+2021-05-30 18:38:41,552:INFO:Initializing load_model()
+2021-05-30 18:38:41,553:INFO:load_model(model_name=model/diamond-pipeline, platform=None, authentication=None, verbose=True)
+2021-05-30 19:05:10,798:INFO:Initializing load_model()
+2021-05-30 19:05:10,798:INFO:load_model(model_name=model/diamond-pipeline, platform=None, authentication=None, verbose=True)
+2021-05-30 19:05:58,510:INFO:Initializing load_model()
+2021-05-30 19:05:58,510:INFO:load_model(model_name=model/diamond-pipeline, platform=None, authentication=None, verbose=True)
+2021-05-30 19:08:32,712:INFO:Initializing load_model()
+2021-05-30 19:08:32,713:INFO:load_model(model_name=model/diamond-pipeline, platform=None, authentication=None, verbose=True)
+2021-05-30 19:16:02,504:INFO:Initializing load_model()
+2021-05-30 19:16:02,505:INFO:load_model(model_name=model/diamond-pipeline, platform=None, authentication=None, verbose=True)
+2021-05-30 19:17:59,012:INFO:Initializing load_model()
+2021-05-30 19:17:59,013:INFO:load_model(model_name=model/diamond-pipeline, platform=None, authentication=None, verbose=True)
+2021-05-30 19:18:48,188:INFO:Initializing load_model()
+2021-05-30 19:18:48,188:INFO:load_model(model_name=model/diamond-pipeline, platform=None, authentication=None, verbose=True)
+2021-05-30 19:20:21,670:INFO:Initializing load_model()
+2021-05-30 19:20:21,670:INFO:load_model(model_name=model/diamond-pipeline, platform=None, authentication=None, verbose=True)
+2021-05-30 19:20:55,317:INFO:Initializing load_model()
+2021-05-30 19:20:55,317:INFO:load_model(model_name=model/diamond-pipeline, platform=None, authentication=None, verbose=True)
+2021-05-30 19:29:13,769:INFO:Initializing load_model()
+2021-05-30 19:29:13,769:INFO:load_model(model_name=model/diamond-pipeline, platform=None, authentication=None, verbose=True)
+2021-05-30 19:30:23,418:INFO:Initializing load_model()
+2021-05-30 19:30:23,418:INFO:load_model(model_name=model/diamond-pipeline, platform=None, authentication=None, verbose=True)
+2021-05-30 19:35:04,721:INFO:Initializing load_model()
+2021-05-30 19:35:04,721:INFO:load_model(model_name=model/diamond-pipeline, platform=None, authentication=None, verbose=True)
+2021-05-30 19:40:56,015:INFO:Initializing predict_model()
+2021-05-30 19:40:56,016:INFO:predict_model(estimator=Pipeline(memory=None,
+         steps=[('dtypes',
+                 DataTypes_Auto_infer(categorical_features=[],
+                                      display_types=True, features_todrop=[],
+                                      id_columns=[], ml_usecase='regression',
+                                      numerical_features=[], target='Price',
+                                      time_features=[])),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='...
+                                                                         learning_rate=0.1,
+                                                                         max_depth=-1,
+                                                                         min_child_samples=20,
+                                                                         min_child_weight=0.001,
+                                                                         min_split_gain=0.0,
+                                                                         n_estimators=100,
+                                                                         n_jobs=-1,
+                                                                         num_leaves=31,
+                                                                         objective=None,
+                                                                         random_state=719,
+                                                                         reg_alpha=0.0,
+                                                                         reg_lambda=0.0,
+                                                                         silent=True,
+                                                                         subsample=1.0,
+                                                                         subsample_for_bin=200000,
+                                                                         subsample_freq=0),
+                                                 silent=True, subsample=1.0,
+                                                 subsample_for_bin=200000,
+                                                 subsample_freq=0)]],
+         verbose=False), probability_threshold=None, encoded_labels=True, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None)
+2021-05-30 19:40:56,016:INFO:Checking exceptions
+2021-05-30 19:40:56,016:INFO:Preloading libraries
+2021-05-30 19:44:11,337:INFO:Initializing load_model()
+2021-05-30 19:44:11,338:INFO:load_model(model_name=model/diamond-pipeline, platform=None, authentication=None, verbose=True)
+2021-05-30 19:44:33,511:INFO:Initializing load_model()
+2021-05-30 19:44:33,511:INFO:load_model(model_name=model/diamond-pipeline, platform=None, authentication=None, verbose=True)
+2021-05-30 19:46:10,615:INFO:Initializing load_model()
+2021-05-30 19:46:10,615:INFO:load_model(model_name=model/diamond-pipeline, platform=None, authentication=None, verbose=True)
+2021-05-30 19:46:49,455:INFO:Initializing load_model()
+2021-05-30 19:46:49,455:INFO:load_model(model_name=model/diamond-pipeline, platform=None, authentication=None, verbose=True)
+2021-05-30 19:47:01,197:INFO:Initializing load_model()
+2021-05-30 19:47:01,197:INFO:load_model(model_name=model/diamond-pipeline, platform=None, authentication=None, verbose=True)
+2021-05-30 19:48:07,433:INFO:Initializing predict_model()
+2021-05-30 19:48:07,433:INFO:predict_model(estimator=Pipeline(memory=None,
+         steps=[('dtypes',
+                 DataTypes_Auto_infer(categorical_features=[],
+                                      display_types=True, features_todrop=[],
+                                      id_columns=[], ml_usecase='regression',
+                                      numerical_features=[], target='Price',
+                                      time_features=[])),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='...
+                                                                         learning_rate=0.1,
+                                                                         max_depth=-1,
+                                                                         min_child_samples=20,
+                                                                         min_child_weight=0.001,
+                                                                         min_split_gain=0.0,
+                                                                         n_estimators=100,
+                                                                         n_jobs=-1,
+                                                                         num_leaves=31,
+                                                                         objective=None,
+                                                                         random_state=719,
+                                                                         reg_alpha=0.0,
+                                                                         reg_lambda=0.0,
+                                                                         silent=True,
+                                                                         subsample=1.0,
+                                                                         subsample_for_bin=200000,
+                                                                         subsample_freq=0),
+                                                 silent=True, subsample=1.0,
+                                                 subsample_for_bin=200000,
+                                                 subsample_freq=0)]],
+         verbose=False), probability_threshold=None, encoded_labels=True, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None)
+2021-05-30 19:48:07,433:INFO:Checking exceptions
+2021-05-30 19:48:07,433:INFO:Preloading libraries
+2021-05-30 19:50:09,324:INFO:Initializing predict_model()
+2021-05-30 19:50:09,324:INFO:predict_model(estimator=Pipeline(memory=None,
+         steps=[('dtypes',
+                 DataTypes_Auto_infer(categorical_features=[],
+                                      display_types=True, features_todrop=[],
+                                      id_columns=[], ml_usecase='regression',
+                                      numerical_features=[], target='Price',
+                                      time_features=[])),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='...
+                                                                         learning_rate=0.1,
+                                                                         max_depth=-1,
+                                                                         min_child_samples=20,
+                                                                         min_child_weight=0.001,
+                                                                         min_split_gain=0.0,
+                                                                         n_estimators=100,
+                                                                         n_jobs=-1,
+                                                                         num_leaves=31,
+                                                                         objective=None,
+                                                                         random_state=719,
+                                                                         reg_alpha=0.0,
+                                                                         reg_lambda=0.0,
+                                                                         silent=True,
+                                                                         subsample=1.0,
+                                                                         subsample_for_bin=200000,
+                                                                         subsample_freq=0),
+                                                 silent=True, subsample=1.0,
+                                                 subsample_for_bin=200000,
+                                                 subsample_freq=0)]],
+         verbose=False), probability_threshold=None, encoded_labels=True, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None)
+2021-05-30 19:50:09,324:INFO:Checking exceptions
+2021-05-30 19:50:09,324:INFO:Preloading libraries
+2021-05-30 19:50:10,028:INFO:Initializing predict_model()
+2021-05-30 19:50:10,028:INFO:predict_model(estimator=Pipeline(memory=None,
+         steps=[('dtypes',
+                 DataTypes_Auto_infer(categorical_features=[],
+                                      display_types=True, features_todrop=[],
+                                      id_columns=[], ml_usecase='regression',
+                                      numerical_features=[], target='Price',
+                                      time_features=[])),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='...
+                                                                         learning_rate=0.1,
+                                                                         max_depth=-1,
+                                                                         min_child_samples=20,
+                                                                         min_child_weight=0.001,
+                                                                         min_split_gain=0.0,
+                                                                         n_estimators=100,
+                                                                         n_jobs=-1,
+                                                                         num_leaves=31,
+                                                                         objective=None,
+                                                                         random_state=719,
+                                                                         reg_alpha=0.0,
+                                                                         reg_lambda=0.0,
+                                                                         silent=True,
+                                                                         subsample=1.0,
+                                                                         subsample_for_bin=200000,
+                                                                         subsample_freq=0),
+                                                 silent=True, subsample=1.0,
+                                                 subsample_for_bin=200000,
+                                                 subsample_freq=0)]],
+         verbose=False), probability_threshold=None, encoded_labels=True, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None)
+2021-05-30 19:50:10,028:INFO:Checking exceptions
+2021-05-30 19:50:10,028:INFO:Preloading libraries
+2021-05-30 19:50:45,841:INFO:Initializing predict_model()
+2021-05-30 19:50:45,841:INFO:predict_model(estimator=Pipeline(memory=None,
+         steps=[('dtypes',
+                 DataTypes_Auto_infer(categorical_features=[],
+                                      display_types=True, features_todrop=[],
+                                      id_columns=[], ml_usecase='regression',
+                                      numerical_features=[], target='Price',
+                                      time_features=[])),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='...
+                                                                         learning_rate=0.1,
+                                                                         max_depth=-1,
+                                                                         min_child_samples=20,
+                                                                         min_child_weight=0.001,
+                                                                         min_split_gain=0.0,
+                                                                         n_estimators=100,
+                                                                         n_jobs=-1,
+                                                                         num_leaves=31,
+                                                                         objective=None,
+                                                                         random_state=719,
+                                                                         reg_alpha=0.0,
+                                                                         reg_lambda=0.0,
+                                                                         silent=True,
+                                                                         subsample=1.0,
+                                                                         subsample_for_bin=200000,
+                                                                         subsample_freq=0),
+                                                 silent=True, subsample=1.0,
+                                                 subsample_for_bin=200000,
+                                                 subsample_freq=0)]],
+         verbose=False), probability_threshold=None, encoded_labels=True, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None)
+2021-05-30 19:50:45,841:INFO:Checking exceptions
+2021-05-30 19:50:45,841:INFO:Preloading libraries
